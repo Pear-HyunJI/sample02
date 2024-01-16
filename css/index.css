@@ -167,6 +167,20 @@ img {
     background: #fff;
 }
 
+/*==============슬라이더 자동재생 멈춤 버튼=================*/
+#section .slideOuter {
+    position: relative;
+}
+
+#section .slideOuter .plapau {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: 50px;
+    color: #000;
+}
+
 #section .slide {
     position: relative;
     /* background-image: url(../image/mainslide1.jpg);
@@ -202,18 +216,37 @@ img {
 
 #section .slide .text p {
     font-size: 20px;
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+}
+
+#section .slick-current.slick-active .slide .text p {
+    animation: fadeInDown 1s 1 both 0.3s;
 }
 
 #section .slide .text h2 {
     font-size: 50px;
     margin: 30px 0 50px;
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+}
+
+#section .slick-current.slick-active .slide .text h2 {
+    animation: fadeInDown 1s 1 both 1.3s;
 }
 
 #section .slide .text a {
+    display: inline-block;
     padding: 10px 16px;
     font-size: 18px;
     border: 2px solid #fff;
     border-radius: 3px;
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+}
+
+#section .slick-current.slick-active .slide .text a {
+    animation: fadeInDown 1s 1 both 2.3s;
 }
 
 /*======================================ourcompany================================================*/
